@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Registro</title>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <h1>Formulario</h1>
+      <fieldset>
+        <legend>Información personal</legend>
+        <label for="name">Nombre: </label>
+        <input type="text" name="name" , id="name" required /> <br />
+        <br />
+        <label for="lname">Apellido: </label>
+        <input type="text" name="lname" id="lname" required /> <br />
+        <br />
+        <label for="bdate">Fecha de nacimiento: </label>
+        <input type="date" name="bdate" id="bdate" required /> <br />
+        <br />
+        <label>Género: </label> <br />
+        <input type="radio" name="gen" id="masc" value="masc" required />
+        <label for="masc">Masculino</label> <br />
+        <input type="radio" name="gen" id="fem" value="fem" />
+        <label for="fem">Femenino</label> <br />
+        <input type="radio" name="gen" id="other" value="other" />
+        <label for="other">Otro</label>
+        <br />
+        <br />
+      </fieldset>
+      <fieldset>
+        <legend>Información de Contacto</legend>
+        <label for="email">Correo Electrónico: </label>
+        <input type="email" name="email" id="email" required /> <br />
+        <br />
+        <label for="tel">Número de Teléfono: </label>
+        <input type="tel" name="tel" id="tel" required /> <br />
+        <br />
+        <label for="addr">Dirección: </label>
+        <br />
+        <textarea name="addr" id="addr" rows="4" cols="42"></textarea>
+        <br />
+        <br />
+      </fieldset>
+      <fieldset>
+        <legend>Información de Cuenta</legend>
+        <label for="username">Nombre de Usuario: </label>
+        <input type="text" name="username" id="username" required /> <br />
+        <br />
+        <label for="pass">Contraseña: </label>
+        <input type="password" name="pass" id="pass" required /> <br />
+        <br />
+        <label for="confpass">Confirmar Contraseña: </label>
+        <input type="password" name="confpass" id="confpass" required />
+        <br />
+        <br />
+      </fieldset>
+      <fieldset>
+        <legend>Preferencias</legend>
+        <label for="color">Seleccionar un color favorito: </label>
+        <select name="color" id="color">
+          <option value="red">Rojo</option>
+          <option value="blu">Azul</option>
+          <option value="gre">Verde</option>
+          <option value="yel">Amarillo</option>
+        </select>
+        <br />
+        <br />
+        <input type="checkbox" name="eula" id="eula" required />
+        <label for="eula">Acepto los Términos y Condiciones</label>
+        <br />
+        <br />
+      </fieldset>
+      <button type="submit">Registrarse</button>
+    </form>
+  </body>
+</html>

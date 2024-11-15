@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Formulario de Contacto</h2>
+    <form>
+      <label for="name">Nombre: </label>
+      <input
+        name="name"
+        type="text"
+        id="name"
+        placeholder="Nombre"
+        pattern="[a-zA-Z]{1,40}"
+        required
+        autofocus />
+      <label for="cp">CP: </label>
+      <input
+        name="cp"
+        type="text"
+        id="cp"
+        placeholder="Código postal"
+        pattern="[0-9]{5}"
+        required />
+      <label for="age">Edad: </label>
+      <input
+        name="age"
+        type="text"
+        id="age"
+        placeholder="Edad"
+        pattern="[0-9]{2}"
+        required />
+      <button id="send" name="send" type="submit">enviar</button>
+    </form>
+  </body>
+</html>
