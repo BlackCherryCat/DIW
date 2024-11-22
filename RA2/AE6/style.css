@@ -1,0 +1,30 @@
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+a {
+  text-decoration: none;
+  color: #cc3300;
+}
+h1,
+h2 {
+  color: #336699;
+}
+div h2 {
+  color: black;
+}
+.destacado {
+  list-style-type: square;
+  font-weight: bold;
+}
+button {
+  background-color: #ff9900;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  border: transparent;
+}
+button:hover {
+  background-color: #cc3300;
+  cursor: pointer;
+}

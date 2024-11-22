@@ -1,0 +1,25 @@
+.cta-container{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/015/132/071/large_2x/abstract-the-cyan-background-for-design-hd-wallpaper-free-vector-free-photo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: center;
+    padding: 60px 60px;
+    text-align: center;
+    
+}
+.cta-text{
+    font-size: 28px;
+    font-weight: bold;
+}
+.cta-button{
+    background-color: #626bb2;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: transparent;
+}
+.cta-button:hover{
+    cursor: pointer;
+}
