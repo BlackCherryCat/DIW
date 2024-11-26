@@ -1,0 +1,13 @@
+div {
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  padding-right: 3%;
+}
+li::before {
+  padding-right: 1%;
+  content: "😻";
+  line-height: 35px;
+  text-align: center;
+}
