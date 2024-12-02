@@ -1,0 +1,34 @@
+* {
+  font-family: Arial;
+  font-weight: bold;
+}
+
+nav {
+  margin: 10px;
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  width: 100px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 10px 5px;
+  border-right: 1px solid #336699;
+  display: block;
+}
+
+li {
+  float: left;
+  list-style: none;
+}
+
+a:hover {
+  background-color: #336699;
+}
+
+li:last-child a {
+  border-right: none;
+}

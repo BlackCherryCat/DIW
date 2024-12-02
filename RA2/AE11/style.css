@@ -1,0 +1,19 @@
+.breadcrumb{
+    font-family: Arial;
+    padding: 0.5em;
+}
+.breadcrumb a{
+    color: #0095eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+.breadcrumb a:hover{
+    color: #006196;
+    text-decoration: underline;
+}
+.right{
+    float: right; 
+}
+.left{
+    float: left;
+}

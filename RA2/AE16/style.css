@@ -1,0 +1,57 @@
+article {
+  float: left;
+  width: 350px;
+  height: 140px;
+  background-color: #f7f3f3;
+  margin: 10px;
+}
+
+img {
+  padding: 20px;
+  width: 100px;
+  float: left;
+}
+
+.datos-productos {
+  float: right;
+  padding: 20px;
+  width: 190px;
+  box-sizing: border-box;
+}
+
+.borrar {
+  float: right;
+  padding: 0px 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: -10px;
+  margin-left: 10px;
+}
+
+.nombre {
+  float: right;
+  font-weight: bold;
+  font-size: 12px; /* He puesto esta propiedad para que coincida con la foto de ejemplo del ejercicio */
+}
+
+.precio {
+  float: right;
+  color: #666;
+  font-size: 14px;
+  margin: 5px 0px;
+  clear: both;
+}
+
+.colores {
+  clear: both;
+}
+
+li {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 12.5px;
+  margin-left: 5px;
+  background-color: burlywood;
+  border: 1px solid black;
+}

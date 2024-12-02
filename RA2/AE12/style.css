@@ -1,0 +1,30 @@
+* {
+  font-family: Arial;
+}
+.menu {
+  width: 140px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ffc83d;
+}
+.menu li {
+  border-bottom: 1px solid #ffc83d;
+}
+.menu li:last-child {
+  border-bottom: 0;
+}
+a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+  background-color: #e5f3fe;
+}
+a:hover {
+  background-color: #c8e2f7;
+}
+a::before {
+  content: "👉";
+}

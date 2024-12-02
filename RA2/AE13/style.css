@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+h2{
+    text-align: center;
+    background-color: #EDEEEE;
+    color: orange;
+    border: 3px solid #4caf50;
+    padding: 30px;
+}
+div{
+    width: 500px;
+    margin: 0 auto;
+}
+img{
+    float: left;
+    padding: 1.2em;
+}
+img:hover{
+    background-color: #e8f1f4;
+}
