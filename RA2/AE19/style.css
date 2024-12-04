@@ -9,5 +9,5 @@ ul{
   list-style-type: none;
 }
 li::before{
-  content: "• ";  
+  content: "\2022";  
 }
