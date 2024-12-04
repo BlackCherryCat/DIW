@@ -2,3 +2,50 @@ div {
   float: left;
   width: 33%;
 }
+.second li strong, .third li strong {
+  color: purple;
+}
+hr{
+  display: none;
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  * {
+    font-family: Arial;
+  }
+  div.first {
+    width: 33%;
+  }
+  div {
+    width: 66%;
+  }
+  .third li strong {
+    
+    text-decoration: underline;
+  }
+  .first span{
+    display: block;
+  }
+  hr{
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  * {
+    font-family: "Times New Roman";
+  }
+  div {
+    width: 100%;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  span{
+    display: block;
+  }
+  hr{
+    display: block;
+  }
+}

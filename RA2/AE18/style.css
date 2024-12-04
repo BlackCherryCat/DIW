@@ -1,0 +1,25 @@
+button{
+  padding: 10px 20px;
+  border: none;
+  margin: 10px;
+  border-radius: 5px;
+}
+button:hover{
+  scale: 1.1;
+}
+.normal{
+  background-color: #3498db;
+  color: white;
+  cursor: crosshair;
+}
+.contorno{
+  border: 2px solid #3498db;
+  background-color: transparent;
+  color: #3498db;
+  cursor: pointer;
+}
+.alerta{
+  background-color: #e74c3c;
+  color: white;
+  cursor: help;
+}

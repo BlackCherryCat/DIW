@@ -1,0 +1,13 @@
+[fruta]{
+  background-color: lightgreen;
+  color: white;
+}
+[verdura]{
+  background-color: orange;
+}
+ul{
+  list-style-type: none;
+}
+li::before{
+  content: "• ";  
+}
