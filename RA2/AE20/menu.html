@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="styleL.css" />
     <meta name="description" content="Kiosko Fernando" />
     <meta name="author" content="Álvaro" />
     <link rel="icon" type="image/x-icon" href="logo.jpg" />
-    <title>Kiosko Fernando</title>
+    <title>La carta</title>
   </head>
   <body>
     <header>
@@ -17,7 +16,8 @@
         src="logo.jpg"
         alt="Logo Kiosko"
         width="100"
-        height="100" />
+        height="100"
+        onclick="window.location.href='main.html'" />
       <nav>
         <ul>
           <li><a href="menu.html">Menu</a></li>
@@ -26,24 +26,7 @@
         </ul>
       </nav>
     </header>
-    <div class="cta-container">
-      <h2 class="cta-text">¡Disfruta de nuestra gastronomía mediterranea!</h2>
-      <div class="cta-buttons-container">
-        <button class="cta-button" onclick="window.location.href='main.html'">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/4/42/Icons-flag-es.png?20051129223101"
-            alt="Spain icon flag"
-            width="30px" />
-          Español
-        </button>
-        <button class="cta-button" onclick="window.location.href='main.html'">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/0/07/Icons-flag-uk.png"
-            alt="UK icon flag"
-            width="30px" />English
-        </button>
-      </div>
-    </div>
+    <div class="menu"></div>
     <footer>
       <p>Kiosko Fernando</p>
       <p>Todos los derechos reservados &copy; 2024</p>

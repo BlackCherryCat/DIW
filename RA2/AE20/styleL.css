@@ -1,0 +1,36 @@
+.cta-container {
+  background-image: url(https://media.giphy.com/media/VbK5Vfu8R0a4GGCcsx/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  align-content: center;
+  padding: 60px 60px;
+  text-align: center;
+  flex-grow: 1; /* Hace que este contenedor ocupe el espacio restante */
+  display: flex; /*centra el contenido dentro de la sección */
+  flex-direction: column; /* Ordena el contenido internamente en columna */
+  justify-content: center;
+}
+.cta-text {
+  font-size: 28px;
+  font-weight: bold;
+}
+.cta-button {
+  background-color: #626bb2;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: transparent;
+  display: flex;
+}
+.cta-button:hover {
+  cursor: pointer;
+}
+.cta-buttons-container {
+  display: flex; /* Coloca los botones en línea */
+  gap: 10px; /* Espaciado entre los botones */
+  margin-top: 20px; /* Separación respecto al texto */
+  align-self: center;
+}
