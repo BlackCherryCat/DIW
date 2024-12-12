@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: aqua;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+img#logo {
+  padding-top: 20px;
+}
+li {
+  list-style-type: none;
+  margin: 5px;
+  float: left;
+}
+a {
+  border: solid 1px;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.cta-container {
+  background-image: url(https://media.giphy.com/media/VbK5Vfu8R0a4GGCcsx/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  align-content: center;
+  padding: 60px 60px;
+  text-align: center;
+}
+.cta-text {
+  font-size: 28px;
+  font-weight: bold;
+}
+.cta-button {
+  background-color: #626bb2;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: transparent;
+}
+.cta-button:hover {
+  cursor: pointer;
+}
+footer {
+  height: 200px;
+  background-color: gray;
+  text-align: center;
+}
+footer p {
+  display: inline;
+}
