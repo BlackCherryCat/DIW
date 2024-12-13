@@ -22,7 +22,7 @@ nav {
 img#logo {
   padding: 10px;
 }
-img#logo:hover{
+img#logo:hover {
   cursor: pointer;
 }
 nav li {
@@ -31,13 +31,18 @@ nav li {
   float: left;
 }
 a {
-  border: solid 2px;
+  text-decoration: none;
+}
+nav a {
+  border: black solid 2px;
   padding: 5px;
   border-radius: 7px;
   text-decoration: none;
+  background-color: #626bb2;
+  color: white;
 }
-a:hover {
-  background-color: aliceblue;
+nav a:hover {
+  background-color: rgb(24, 89, 163);
   cursor: pointer;
 }
 li:active {
@@ -53,7 +58,7 @@ footer {
   padding: 10px;
 }
 @media (max-width: 720px) {
-  header{
+  header {
     flex-direction: column;
   }
 }

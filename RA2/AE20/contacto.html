@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleC.css" />
     <meta name="description" content="Kiosko Fernando" />
     <meta name="author" content="Álvaro" />
     <link rel="icon" type="image/x-icon" href="logo.jpg" />
@@ -11,13 +12,14 @@
   </head>
   <body>
     <header>
-      <img
-        id="logo"
-        src="logo.jpg"
-        alt="Logo Kiosko"
-        width="100"
-        height="100"
-        onclick="window.location.href='main.html'" />
+      <a href="main.html">
+        <img
+          id="logo"
+          src="logo.jpg"
+          alt="Logo Kiosko"
+          width="100"
+          height="100" />
+      </a>
       <nav>
         <ul>
           <li><a href="menu.html">Menu</a></li>
@@ -26,7 +28,38 @@
         </ul>
       </nav>
     </header>
-    <div class="contacto"></div>
+    <section class="contacto">
+      <h3 class="title">Contactenos</h3>
+      <section>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d12786.30819837478!2d-3.9530150000000006!3d36.756722!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzbCsDQ1JzM0LjMiTiAzwrA1NycxMi43Ilc!5e0!3m2!1ses!2ses!4v1734037355006!5m2!1ses!2ses"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="form">
+          <form action="/">
+            <h1>Contáctenos</h1>
+            <div class="info">
+              <input
+                class="fname"
+                type="text"
+                name="name"
+                placeholder="Nombre completo" />
+              <input type="text" name="name" placeholder="Email" />
+              <input type="text" name="name" placeholder="Teléfono" />
+            </div>
+            <p>Mensaje</p>
+            <div>
+              <textarea rows="4"></textarea>
+            </div>
+            <button type="submit" href="/">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </section>
     <footer>
       <p>Kiosko Fernando</p>
       <p>Todos los derechos reservados &copy; 2024</p>

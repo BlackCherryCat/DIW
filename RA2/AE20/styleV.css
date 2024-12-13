@@ -1,0 +1,27 @@
+.vino section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 80vh;
+  background-color: rgb(18, 189, 231);
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+h3,
+section {
+  text-align: center;
+}
+div {
+  flex: 33%;
+}
+.title {
+  background-color: rgb(0, 255, 170);
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  padding: 15px;
+  justify-content: center;
+  text-align: center;
+}

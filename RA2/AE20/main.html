@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleMa.css" />
     <meta name="description" content="Kiosko Fernando" />
     <meta name="author" content="Álvaro" />
     <link rel="icon" type="image/x-icon" href="logo.jpg" />
@@ -11,13 +12,14 @@
   </head>
   <body>
     <header>
-      <img
-        id="logo"
-        src="logo.jpg"
-        alt="Logo Kiosko"
-        width="100"
-        height="100"
-        onclick="window.location.href='main.html'" />
+      <a href="main.html">
+        <img
+          id="logo"
+          src="logo.jpg"
+          alt="Logo Kiosko"
+          width="100"
+          height="100" />
+      </a>
       <nav>
         <ul>
           <li><a href="menu.html">Menu</a></li>
@@ -26,7 +28,36 @@
         </ul>
       </nav>
     </header>
-    <div class="main"></div>
+    <section class="main">
+      <h3 class="title">Inicio</h3>
+      <section>
+        <div id="menu">
+          <a href="menu.html"
+            ><img
+              src="svg/Santa-Marta_Plato.svg"
+              height="300"
+              width="300"
+              alt="Plato de comida de mar"
+          /></a>
+          <p>Nuestra carta.</p>
+        </div>
+        <div id="vino">
+          <a href="vinos.html"
+            ><img src="svg/Vini.svg" height="300" alt="Una selección de vinos"
+          /></a>
+          <p>Nuestra selección de vinos.</p>
+        </div>
+        <div id="cont">
+          <a href="contacto.html"
+            ><img
+              src="svg/Contact-Form.svg"
+              height="300"
+              alt="Icono de un formulario de contacto"
+          /></a>
+          <p>Contactenos y reserve su mesa.</p>
+        </div>
+      </section>
+    </section>
     <footer>
       <p>Kiosko Fernando</p>
       <p>Todos los derechos reservados &copy; 2024</p>
