@@ -1,0 +1,12 @@
+:root {
+  --main-color: #3498db;
+  --second-color: white;
+  --radius: 10px;
+}
+p {
+  background-color: var(--main-color);
+  border-radius: var(--radius);
+  color: var(--second-color);
+  padding: 20px;
+  font-size: 18px;
+}
