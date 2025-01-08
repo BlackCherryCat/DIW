@@ -1,5 +1,80 @@
-div{
-    height: 180px;
-    width: 180px;
-    float: left;
+div {
+  height: 180px;
+  width: 180px;
+  float: left;
+  text-align: center;
+  line-height: 9em;
+  color: white;
+  margin: 10px;
+}
+
+#background {
+  background-color: red;
+}
+#fontsize {
+  background-color: plum;
+}
+#color {
+  background-color: blue;
+}
+#lineheight {
+  background-color: royalblue;
+}
+#borderradius {
+  background-color: darkcyan;
+}
+#boxshadow {
+  background-color: goldenrod;
+}
+#opacity {
+  background-color: orange;
+}
+#border {
+  background-color: gray;
+}
+#margin {
+  background-color: midnightblue;
+}
+#padding {
+  background-color: black;
+}
+#background:hover {
+  background-color: aqua;
+  transition: background-color 1s linear;
+}
+#fontsize:hover {
+  font-size: larger;
+  transition: font-size 1s ease;
+}
+#color:hover {
+  color: aqua;
+  transition: color 1s linear;
+}
+#lineheight:hover {
+  line-height: 200px;
+  transition: line-height 1s linear;
+}
+#borderradius:hover {
+  border-radius: 10px;
+  transition: border-radius 1s linear;
+}
+#boxshadow:hover {
+  box-shadow: 5px 5px 5px black;
+  transition: box-shadow 0.2s linear;
+}
+#opacity:hover {
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+#border:hover {
+  border: 5px solid black;
+  transition: border 1s linear;
+}
+#margin:hover {
+  margin: 50px;
+  transition: margin 1s linear;
+}
+#padding:hover{
+padding: 50px;
+transition: padding 1s linear;
 }

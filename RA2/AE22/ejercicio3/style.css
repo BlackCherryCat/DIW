@@ -1,0 +1,87 @@
+div {
+  height: 180px;
+  width: 180px;
+  float: left;
+  text-align: center;
+  line-height: 9em;
+  color: white;
+  margin: 10px;
+}
+
+#scale {
+  background-color: red;
+}
+#rotate {
+  background-color: plum;
+}
+#translate {
+  background-color: blue;
+}
+#skew {
+  background-color: royalblue;
+}
+#skewy {
+  background-color: darkcyan;
+}
+#skewx {
+  background-color: goldenrod;
+}
+#translatex {
+  background-color: orange;
+}
+#translatey {
+  background-color: grey;
+}
+#perspectiverotatex {
+  background-color: midnightblue;
+}
+#perspectiverotatey {
+  background-color: gray;
+}
+#matrix {
+  background-color: black;
+}
+#scale:hover {
+  transform: scale(0);
+  transition: transform 1s linear;
+}
+#rotate:hover {
+  transform: rotate(360deg);
+  transition: transform 1s ease;
+}
+#translate:hover {
+  transform: translate(10px);
+  transition: transform 1s linear;
+}
+#skew:hover {
+  transform: skew(35deg);
+  transition: transform 1s linear;
+}
+#skewy:hover {
+  transform: skewY(35deg);
+  transition: transform 1s linear;
+}
+#skewx:hover {
+  transform: skewX(35deg);
+  transition: transform 1s linear;
+}
+#translatex:hover {
+  transform: translateX(10px);
+  transition: transform 1s linear;
+}
+#translatey:hover {
+  transform: translateY(10px);
+  transition: transform 1s linear;
+}
+#perspectiverotatex:hover {
+  transform: perspective(100px) rotateX(30deg);
+  transition: transform 1s linear;
+}
+#perspectiverotatey:hover {
+  transform: perspective(100px) rotateY(30deg);
+  transition: transform 1s linear;
+}
+#matrix:hover {
+  transform: matrix(1, 2, 1, 1, 1, 1);
+  transition: transform 1s linear;
+}
