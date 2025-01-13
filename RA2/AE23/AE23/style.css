@@ -1,0 +1,21 @@
+:root {
+  --fixed-width: 300px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container-fixed {
+  width: var(--fixed-width);
+  background-color: #3498db;
+  padding: 10px;
+  float: left;
+}
+
+.container-variable {
+  background-color: #e74c3c;
+  width: calc(100% - var(--fixed-width));
+  padding: 10px;
+  float: left;
+}
