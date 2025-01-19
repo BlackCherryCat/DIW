@@ -1,0 +1,44 @@
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  color: white;
+}
+button#primary {
+  background-color: #3498db;
+}
+button#primary:hover {
+  cursor: pointer;
+  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+  transition: background-color 0.3s ease-out;
+}
+button#accept {
+  background-color: #27ae60;
+}
+button#accept:hover {
+  cursor: pointer;
+  background-color: rgb(29.661971831, 132.338028169, 73.014084507);
+  transition: background-color 0.3s ease-out;
+}
+button#cancel {
+  background-color: #e74c3c;
+}
+button#cancel:hover {
+  cursor: pointer;
+  background-color: rgb(213.698630137, 43.8356164384, 26.301369863);
+  transition: background-color 0.3s ease-out;
+}
+
+/*
+Resulta que la funcion darken y la funcion global map-get estan
+marcadas como obsoletas, entonces hago uso de color.adjust (tambien
+se podria usar color.scale) para pasarle -10 de luminosidad por
+parametro y para el map-get es solo cambiarlo a map.get,
+ahora bien, hay que importar explicitamente las librerias de map
+y color para poder usar lo que he comentado anteriormente.
+Todo esto en base a warnings que me daba la consola al compilar
+scss
+*/
+
+/*# sourceMappingURL=style.css.map */

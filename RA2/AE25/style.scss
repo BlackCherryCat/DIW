@@ -1,0 +1,60 @@
+@use "sass:map";
+@use "sass:color";
+
+$ButtonsColor: (
+  primary: #3498db,
+  accept: #27ae60,
+  cancel: #e74c3c,
+);
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  color: white; //Este estilo es para que sea igual al ejemplo
+  &#primary {
+    background-color: map.get($ButtonsColor, primary);
+    &:hover {
+      cursor: pointer;
+      background-color: color.adjust(
+        map.get($ButtonsColor, primary),
+        $lightness: -10%
+      );
+      transition: background-color 0.3s ease-out;
+    }
+  }
+  &#accept {
+    background-color: map.get($ButtonsColor, accept);
+    &:hover {
+      cursor: pointer;
+      background-color: color.adjust(
+        map.get($ButtonsColor, accept),
+        $lightness: -10%
+      );
+      transition: background-color 0.3s ease-out;
+    }
+  }
+  &#cancel {
+    background-color: map.get($ButtonsColor, cancel);
+    &:hover {
+      cursor: pointer;
+      background-color: color.adjust(
+        map.get($ButtonsColor, cancel),
+        $lightness: -10%
+      );
+      transition: background-color 0.3s ease-out;
+    }
+  }
+}
+
+/*
+Resulta que la funcion darken y la funcion global map-get estan
+marcadas como obsoletas, entonces hago uso de color.adjust (tambien
+se podria usar color.scale) para pasarle -10 de luminosidad por
+parametro y para el map-get es solo cambiarlo a map.get,
+ahora bien, hay que importar explicitamente las librerias de map
+y color para poder usar lo que he comentado anteriormente.
+Todo esto en base a warnings que me daba la consola al compilar
+scss
+*/

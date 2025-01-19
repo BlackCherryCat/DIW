@@ -46,13 +46,13 @@
   border-radius: 6px;
   padding: 5px;
   position: absolute;
-  left: 105%; /* 5px a la derecha */
+  left: 105%;
   top: 50%;
   transform: translateY(-50%);
   opacity: 0;
   transition: opacity 0.5s ease, visibility 0.5s ease;
   max-height: 50px;
-  overflow-y: scroll; /* Permite el desplazamiento vertical */
+  overflow-y: scroll;
 }
 
 .tooltip-container:hover .tooltip {
