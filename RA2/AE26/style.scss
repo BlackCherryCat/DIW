@@ -1,0 +1,19 @@
+@use "sass:color";
+
+$DivColor: #3498db, #27ae60, #e74c3c, #9b59b6, #f1c40f, #2ecc71, #e67e22,
+  #1abc9c, #34495e, #d35400;
+$i: 0;
+div {
+  padding: 20px;
+  margin: 5px;
+  float: left;
+  @each $color in $DivColor {
+    $i: $i + 1;
+    &#c#{$i} {
+      background-color: $color;
+      &:hover {
+        background-color: color.adjust($color, $lightness: -10%);
+      }
+    }
+  }
+}

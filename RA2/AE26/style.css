@@ -1,0 +1,67 @@
+div {
+  padding: 20px;
+  margin: 5px;
+  float: left;
+}
+div#c1 {
+  background-color: #3498db;
+}
+div#c1:hover {
+  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+}
+div#c2 {
+  background-color: #27ae60;
+}
+div#c2:hover {
+  background-color: rgb(29.661971831, 132.338028169, 73.014084507);
+}
+div#c3 {
+  background-color: #e74c3c;
+}
+div#c3:hover {
+  background-color: rgb(213.698630137, 43.8356164384, 26.301369863);
+}
+div#c4 {
+  background-color: #9b59b6;
+}
+div#c4:hover {
+  background-color: rgb(127.949790795, 67.1966527197, 152.8033472803);
+}
+div#c5 {
+  background-color: #f1c40f;
+}
+div#c5:hover {
+  background-color: rgb(193.7007874016, 157.3818897638, 11.2992125984);
+}
+div#c6 {
+  background-color: #2ecc71;
+}
+div#c6:hover {
+  background-color: rgb(36.616, 162.384, 89.948);
+}
+div#c7 {
+  background-color: #e67e22;
+}
+div#c7:hover {
+  background-color: rgb(191.3536585366, 101.3048780488, 21.6463414634);
+}
+div#c8 {
+  background-color: #1abc9c;
+}
+div#c8:hover {
+  background-color: rgb(19.8037383178, 143.1962616822, 118.8224299065);
+}
+div#c9 {
+  background-color: #34495e;
+}
+div#c9:hover {
+  background-color: rgb(33.8356164384, 47.5, 61.1643835616);
+}
+div#c10 {
+  background-color: #d35400;
+}
+div#c10:hover {
+  background-color: rgb(160, 63.6966824645, 0);
+}
+
+/*# sourceMappingURL=style.css.map */
