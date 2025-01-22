@@ -1,0 +1,78 @@
+@use "sass:color";
+@use "sass:map";
+
+$primary-color: #3498db;
+$secondary-color: #e74c3c;
+$font-family: Arial;
+$base-font-size: 16px;
+
+$button-styles: (
+  primary-button: $primary-color,
+  secondary-button: #2ecc71,
+  buy-button: #f39c12,
+);
+
+@mixin center-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: $font-family;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+h1 {
+  font-size: 2rem;
+  color: $primary-color;
+}
+p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-left: 5px; //esta propiedad es para que se parezca a la del ejemplo
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  color: white; //esta propiedad es para que se parezca a la del ejemplo
+  @each $class, $color in $button-styles {
+    &.#{$class} {
+      background-color: $color;
+      &:hover {
+        background-color: color.adjust($color, $lightness: -10%);
+        transition: background-color 0.3s ease-out;
+      }
+    }
+  }
+}
+.product {
+  background-color: white;
+  border: solid 1px black;
+  border-radius: 5px;
+  margin: 10px;
+  &:hover {
+    box-shadow: 0 0 10px 0 rgba(black, 0.2);
+    transition: box-shadow 0.3s ease-out;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h3 {
+  font-size: 1.5rem;
+  margin-right: 5px; //esta propiedad es para que se parezca a la del ejemplo
+}
+.important-text {
+  font-weight: bold;
+  color: $secondary-color;
+}
+.centered {
+  @include center-element;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}

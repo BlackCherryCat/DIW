@@ -1,0 +1,82 @@
+body {
+  font-family: Arial;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #3498db;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-left: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  color: white;
+}
+button.primary-button {
+  background-color: #3498db;
+}
+button.primary-button:hover {
+  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+  transition: background-color 0.3s ease-out;
+}
+button.secondary-button {
+  background-color: #2ecc71;
+}
+button.secondary-button:hover {
+  background-color: rgb(36.616, 162.384, 89.948);
+  transition: background-color 0.3s ease-out;
+}
+button.buy-button {
+  background-color: #f39c12;
+}
+button.buy-button:hover {
+  background-color: rgb(199.8795180723, 126.5060240964, 10.1204819277);
+  transition: background-color 0.3s ease-out;
+}
+
+.product {
+  background-color: white;
+  border: solid 1px black;
+  border-radius: 5px;
+  margin: 10px;
+}
+.product:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-out;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.important-text {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centered:not(:last-child) {
+  margin-right: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
