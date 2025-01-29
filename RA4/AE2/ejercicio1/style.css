@@ -1,0 +1,28 @@
+:root {
+  --color-background: #3498db;
+  --color-text-w: #fff;
+  --color-text-b: #000;
+  --padding-top_down: 10px;
+  --padding-left_right: 15px;
+  --border: none;
+  --cursor: pointer;
+  --color-background-hover: #2980b9;
+  --color-background-disable: #95a5a6;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+@media (max-width: 50vmax) {
+  .controls {
+    flex-direction: column;
+  }
+}
