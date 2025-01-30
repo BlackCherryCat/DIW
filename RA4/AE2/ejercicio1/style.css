@@ -8,12 +8,14 @@
   --cursor: pointer;
   --color-background-hover: #2980b9;
   --color-background-disable: #95a5a6;
+  --cursor-disable: not-allowed;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20px;
 }
 .controls {
   display: flex;
@@ -21,8 +23,28 @@
   align-items: center;
   gap: 1rem;
 }
-@media (max-width: 50vmax) {
+@media (max-width: 720px) {
   .controls {
     flex-direction: column;
   }
+}
+button {
+  background-color: var(--color-background);
+  color: var(--color-text-w);
+  padding: var(--padding-top_down) var(--padding-left_right);
+  border: var(--border);
+  cursor: var(--cursor);
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+}
+button:hover {
+  background-color: var(--color-background-hover);
+  transition: background-color 0.3s ease;
+}
+button:disabled {
+  background-color: var(--color-background-disable);
+  cursor: var(--cursor-disable);
+  color: var(--color-text-b);
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
 }

@@ -55,8 +55,28 @@ function MinVol() {
         minvol.setAttribute("disabled", "true");
     }
 }
+
 if (video.volume == 0) {
     minvol.setAttribute("disabled", "true");
 } else if (video.volume == 1) {
     pluvol.setAttribute("disabled", "true");
+}
+
+function BackgroundVideo() {
+    if (video.paused) {
+        document.body.style.backgroundColor = "white";
+        document.body.style.color = "black";
+        document.body.style.transition = "background-color 0.3s linear, color 0.3s linear";
+    }
+    if (!video.paused) {
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+        document.body.style.transition = "background-color 0.3s linear, color 0.3s linear";
+    }
+}
+video.onplay = BackgroundVideo;
+video.onpause = BackgroundVideo;
+video.onended = BackgroundVideo;
+video.onended = () => {
+    play.innerHTML = "►";
 }

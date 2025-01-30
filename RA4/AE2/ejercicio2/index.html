@@ -12,13 +12,9 @@
     <title>CONTROL DE REPRODUCCIÓN DE VÍDEO Y AUDIO CON JAVASCRIPT</title>
   </head>
   <body>
-    <h1>MP3</h1>
-    <audio controls>
-      <source src="sample.mp3" type='audio/mp3; codecs="mp3"' />
-    </audio>
-    <h1>OGG</h1>
-    <audio controls>
-      <source src="sample.ogg" type='audio/ogg; codecs="vorbis"' />
-    </audio>
+    <div class="container">
+      <button id="playPauseButton">Iniciar sonido ambiente</button>
+      <div id="audioStatus" class="audio-status"></div>
+    </div>
   </body>
 </html>
