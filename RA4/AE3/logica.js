@@ -18,7 +18,7 @@ class Game {
         this.context = this.canvas.getContext('2d');
 
         this.size = 10;
-        this.snake = [new Segment(3000, 240, this.size, '#00ff00')];
+        this.snake = [new Segment(300, 240, this.size, '#00ff00')];
         this.direction = 'RIGHT';
         this.food = this.generateFood();
         this.obstacles = [];
