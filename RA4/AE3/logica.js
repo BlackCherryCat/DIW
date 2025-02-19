@@ -20,8 +20,8 @@ class Game {
         this.size = 10;
         this.snake = [new Segment(300, 240, this.size, '#00ff00')];
         this.direction = 'RIGHT';
-        this.food = this.generateFood();
         this.obstacles = [];
+        this.food = this.generateFood();
         this.foodCount = 0;
 
         document.addEventListener('keydown', this.changeDirection.bind(this));
@@ -37,20 +37,33 @@ class Game {
     }
 
     generateFood() {
-        return new Segment(
-            this.getRandomCoord(this.canvas.width),
-            this.getRandomCoord(this.canvas.height),
-            this.size, '#ff0000'
-        );
+        let food;
+        do {
+            food = new Segment(
+                this.getRandomCoord(this.canvas.width),
+                this.getRandomCoord(this.canvas.height),
+                this.size, '#ff0000'
+            );
+        } while (this.isOccupied(food.x, food.y));
+        return food;
+    }
+
+    isOccupied(x, y) {
+        return this.snake.some(segment => segment.x === x && segment.y === y) ||
+            this.obstacles.some(obstacle => obstacle.x === x && obstacle.y === y);
     }
 
     generateObstacles(n) {
         for (let i = 0; i < n; i++) {
-            this.obstacles.push(new Segment(
-                this.getRandomCoord(this.canvas.width),
-                this.getRandomCoord(this.canvas.height),
-                this.size, '#61dafb'
-            ));
+            let obstacle;
+            do {
+                obstacle = new Segment(
+                    this.getRandomCoord(this.canvas.width),
+                    this.getRandomCoord(this.canvas.height),
+                    this.size, '#61dafb'
+                );
+            } while (this.isOccupied(obstacle.x, obstacle.y));
+            this.obstacles.push(obstacle);
         }
     }
 
@@ -69,6 +82,7 @@ class Game {
         this.snake.unshift(newHead);
         if (this.collidesWith(this.food)) {
             this.food = this.generateFood();
+            this.obstacles = [];
             this.generateObstacles(++this.foodCount);
         } else {
             this.snake.pop();
